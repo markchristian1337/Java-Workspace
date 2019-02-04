@@ -1,0 +1,29 @@
+class Man {
+	public void help() {
+		System.out.println("man helping...");
+	}
+}
+
+class Woman{
+	public void help() {
+		System.out.println("woman helping...");
+	}
+}
+
+public class Sample {
+	public static void seekHelpFrom(Man helper) {
+		helper.help();
+	}
+
+	public static void main(String[] args) {
+		Man bob = new Man();
+		
+		seekHelpFrom(bob);
+		
+		Woman sarah = new Woman();
+		
+		seekHelpFrom(sarah);
+ 
+	}
+
+}
